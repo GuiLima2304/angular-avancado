@@ -70,5 +70,5 @@ export class CategoryService {
     console.log("erro na requisicao: ", error);
     return throwError(error);
   }
-  )
+  
 }
