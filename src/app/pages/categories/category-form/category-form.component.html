@@ -1,3 +1,45 @@
-<p>
-  category-form works!
-</p>
+<nav class="mt-5">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/categories">Categorias</a></li>
+      <li class="breadcrumb-item">Formulario de Categoria</li>
+    </ol>
+  </nav>
+  
+  <div class="row">
+    <div class="col-md">
+      <h1 class="h2 border-left pl-2">
+        Formulário de Categorias
+      </h1>
+    </div>
+  
+    <div class="col-md mb-4">
+      <a routerLink="/categories" class="btn btn-light float-right">
+        << Voltar
+      </a>
+    </div>
+  </div>
+
+  <form [formGroup]="categoryForm">
+    <div class="card">
+      <div class="card-header">
+        Informações sobre categoria
+      </div>
+
+    <div class="card-body">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="name">Nome</label>
+          <input type="text" class="form-control" id="name"/>
+        </div>
+        <div class="form-group col-md-8">
+          <label class="description">Descrição</label>
+          <input type="text" class="form-control" id="description"/>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <button type="submit" class="btn btn-success btn-lg mt-3 float-right">Salvar</button>
+
+  </form>
